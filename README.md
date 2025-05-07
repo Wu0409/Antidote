@@ -3,6 +3,8 @@
 This repository contains the source code for the CVPR 2025 paper: **"Antidote: A Unified Framework for Mitigating LVLM Hallucinations in Counterfactual Presupposition and Object Perception"**. 📄✨
 
 [![arXiv](https://img.shields.io/badge/arXiv-2303.02506-b31b1b.svg)](https://arxiv.org/abs/2504.20468)
+[![code](https://img.shields.io/badge/Github-Code-keygen.svg?logo=github)](https://github.com/Wu0409/Antidote)
+
 
 ## CP-Bench
 We’ve built a benchmark to evaluate the robustness of recent advanced Large Vision-Language Models (LVLMs) **against Counterfactual Presupposition Questions (CPQs)**. This benchmark assesses:
@@ -28,10 +30,26 @@ Due to time and resource constraints, we haven’t extensively tested recent pro
 ## Antidote
 In this repository, we’ve structured our Antidote framework into four stages:
 
-**Data Pipeline (data_pipeline) — Inference (inference) — Preference Alignment (preference_alignment)**
+**Data Pipeline (`data_pipeline`) — Inference (`inference`) — Preference Alignment (`preference_alignment`)**
 
 The detailed instructions are provided in each step folder.
 
 **NOTES:**
 * We refactored the code using SWIFT framework (https://github.com/modelscope/ms-swift) for better compatibility with existing LVLMs.
-* Please see the document of SWIFT for more training details.
+* Please see the document of SWIFT for training implementations.
+
+
+## Citation
+Please kindly cite our paper if you find it's helpful in your work:
+```
+@article{wu2025antidote,
+  title={Antidote: A Unified Framework for Mitigating LVLM Hallucinations in Counterfactual Presupposition and Object Perception},
+  author={Wu, Yuanchen and Zhang, Lu and Yao, Hang and Du, Junlong and Yan, Ke and Ding, Shouhong and Wu, Yunsheng and Li, Xiaoqiang},
+  journal={arXiv preprint arXiv:2504.20468},
+  year={2025}
+}
+```
+
+## Acknowledgement
+We gratefully acknowledge the significant contributions of the open-source community and specifically thank the developers and contributors of [MS-Swift](https://github.com/modelscope/ms-swift), [Grounding-DINO](https://github.com/IDEA-Research/GroundingDINO), and [Stable-Diffusion 3](https://huggingface.co/stabilityai/stable-diffusion-3-medium). Thanks for their brilliant works!
+
