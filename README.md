@@ -17,13 +17,13 @@ We’ve built a benchmark to evaluate the robustness of recent advanced Large Vi
 <img src="resource/leaderboard.png"  width="100%"/>
 
 **Here are some key findings:**
-- Current LVLMs struggle to balance rejecting CPs and accepting TPs.
-- Earlier LVLMs (e.g., LLaVA-1.5-7B) have weak CP rejection capabilities, often blindly answering questions, leading to significant hallucinations.
-- Recent LVLMs show improved capability of CP rejection, but some (e.g., Qwen-2.5-VL-72B) appear overly cautious.
+- Current LVLMs **struggle to** balance rejecting CPs and accepting TPs.
+- Earlier LVLMs (e.g., LLaVA-1.5-7B) have weak CP rejection capabilities, often **blindly answering questions**, leading to significant hallucinations.
+- Recent LVLMs show improved capability of CP rejection, but some (e.g., Qwen-2.5-VL-72B) appear **overly cautious**.
 - Models with reasoning capabilities (e.g., Qwen-2-VL-72B and QvQ-72B) demonstrate better CP rejection.
-- Within the same model family, enhancements in the language base significantly improve CP and TP judgment (e.g., InternVL-2 series: 8B vs. 70B; Qwen2.5-VL: 7B vs. 72B). 
+- Within the same model series, scaling the LLM foundations can improve CP and TP judgment (e.g., InternVL-2 series: 8B vs. 70B; Qwen2.5-VL: 7B vs. 72B). 
 
-Due to time and resource constraints, we haven’t extensively tested proprietary LVLMs yet. We’ll update this section in the future. 🚧
+Due to time and resource constraints, we haven’t extensively tested recent proprietary LVLMs yet. We’ll update this section in the future. 🚧
 
 ## Antidote
 In this repository, we’ve structured our Antidote framework into four stages:
@@ -32,6 +32,6 @@ In this repository, we’ve structured our Antidote framework into four stages:
 
 The detailed instructions are provided in each step folder.
 
-NOTES:
+**NOTES:**
 * We refactored the code using SWIFT framework (https://github.com/modelscope/ms-swift) for better compatibility with existing LVLMs.
 * Please see the document of SWIFT for more training details.
